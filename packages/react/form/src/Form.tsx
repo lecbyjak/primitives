@@ -366,7 +366,7 @@ const FormControl = React.forwardRef<FormControlElement, FormControlProps>(
     const resetControlValidity = React.useCallback(() => {
       const control = ref.current;
       if (control) {
-        control.setCustomValidity('');
+        control.setCustomValidity?.('');
         onFieldValiditionClear(name);
       }
     }, [name, onFieldValiditionClear]);
